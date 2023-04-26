@@ -35,10 +35,8 @@ def is_anagram(first_string: str, second_string: str):
     if second_string:
         second_string = sort_word(second_string.lower())
 
-    result = (
-        False
-        if not (first_string and second_string)
-        else first_string == second_string
+    result = (first_string == second_string) and not (
+        first_string == "" and second_string == ""
     )
 
     return (first_string, second_string, result)
