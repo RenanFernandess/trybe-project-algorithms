@@ -153,9 +153,15 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 
 2. <details>
       <summary>is_palindrome_recursive()</summary>
+      A função irá determinar se uma palavra é um palíndromo ou não. A função irá receber uma string de parâmetro e o retorno será um booleano, True ou False.
 
+  
         is_palindrome_recursive(word: str, low_index=0)
-       
+
+      Mas o que é um palíndromo?
+
+      > Um palíndromo é uma palavra, frase ou número que mantém seu sentido mesmo sendo lido de trás para frente. Por exemplo, "ABCBA".
+  
       - Ex:
           
               is_palindrome_recursive("ANA") # saída: True
@@ -184,12 +190,26 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
     </details>
 4. <details>
       <summary>find_duplicate()</summary>
-          find_duplicate(nums)
+  
+        find_duplicate(nums)
+  
+      - Ex:
+          
+          
+            
+      - Retornos
         
    </details>
 5. <details>
       <summary>is_palindrome_iterative()</summary>
-          is_palindrome_iterative(word)
+  
+        is_palindrome_iterative(word)
+  
+      - Ex:
+          
+          
+            
+      - Retornos
         
    </details>
 
