@@ -1,34 +1,31 @@
-def merge(word, start, mid, end):
-    first_half = word[start:mid]
-    second_half = word[mid:end]
-    first_index, second_index = 0, 0
+def merge(left: str, right: str, length: int):
+    left_index, right_index = 0, 0
+    word = ""
 
-    for index in range(start, end):
-        if first_index >= len(first_half):
-            word[index] = second_half[second_index]
-            second_index += 1
-        elif second_index >= len(second_half):
-            word[index] = first_half[first_index]
-            first_index += 1
-        elif first_half[first_index] < second_half[second_index]:
-            word[index] = first_half[first_index]
-            first_index += 1
+    for _ in range(length):
+        if left_index >= len(left):
+            word += right[right_index]
+            right_index += 1
+        elif right_index >= len(right):
+            word += left[left_index]
+            left_index += 1
+        elif left[left_index] < right[right_index]:
+            word += left[left_index]
+            left_index += 1
         else:
-            word[index] = second_half[second_index]
-            second_index += 1
+            word += right[right_index]
+            right_index += 1
+
+    return word
 
 
-def sort_word(word, start=0, end=None):
-    if type(word) == str:
-        word = [*word]
-    if end is None:
-        end = len(word)
-    if (end - start) > 1:
-        mid = (start + end) // 2
-        sort_word(word, start, end=mid)
-        sort_word(word, start=mid, end=end)
-        merge(word=word, start=start, mid=mid, end=end)
-    return "".join(word)
+def sort_word(word):
+    mid = len(word) // 2
+    if mid > 0:
+        left = sort_word(word[:mid])
+        right = sort_word(word[mid:])
+        word = merge(left, right, length=len(word))
+    return word
 
 
 def is_anagram(first_string: str, second_string: str):
