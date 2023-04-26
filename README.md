@@ -149,16 +149,37 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
         * Retorna `None` se em permanence_period houver alguma entrada inválida;
         * Retorna `None` se target_time recebe um valor vazio;
 
-</details>
+    </details>
 
 2. <details>
       <summary>is_palindrome_recursive()</summary>
-          is_palindrome_recursive(word, low_index)
+
+        is_palindrome_recursive(word: str, low_index=0)
+       
+      - Ex:
+          
+              is_palindrome_recursive("ANA") # saída: True
+              is_palindrome_recursive("SOCOS") # saída: True
+              is_palindrome_recursive("COXINHA") # saída: False
+              is_palindrome_recursive("AGUA") # saída: False
+            
+      - Retornos
+  
+        * Retorna `True` se a palavra passada por parâmetro for um palíndromo;
+        * Retorna `False` se a palavra passada por parâmetro não for um palíndromo;
+        * Retorna `False` se nenhuma palavra for passada por parâmetro.
         
     </details>
 3. <details>
       <summary>is_anagram()</summary>
-          is_anagram(first_string, second_string)
+
+        is_anagram(first_string, second_string)
+  
+      - Ex:
+          
+          
+            
+      - Retornos
         
     </details>
 4. <details>
