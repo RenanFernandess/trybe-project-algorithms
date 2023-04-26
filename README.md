@@ -56,11 +56,11 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
 
 1. Clonar o repositorio
 
-        git clone 
+        git clone git@github.com:RenanFernandess/trybe-project-algorithms.git
 
 2. Entrar na pasta project-job-insights
 
-        cd ./trybe-
+        cd ./trybe-project-algorithms
 
 ### Ambiente virtual
 
