@@ -11,7 +11,7 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
 - quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
 - quais arquivos/pastas foram desenvolvidos pela Trybe.
 -->
-# Tech News
+# Algorithms
 
 <details>
   <summary>Índice</summary>
@@ -37,11 +37,16 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
 </details>
 
 ## Sobre o Projeto
-
+ 
+Neste projeto resolvi problemas e otimizar algoritmos desenvolvendo a minha capacidade de implementar soluções para os mais diversos problemas do dia a dia!
 
 ### Habilidades trabalhadas
 
-
+* Lógica;
+* Capacidade de interpretação de problemas;
+* Capacidade de interpretação de um código legado;
+* Capacidade de otimizar a resolução de problemas e;
+* Resolver problemas/Otimizar algoritmos sob pressão.
 
 ### Construido Com
 
