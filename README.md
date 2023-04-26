@@ -137,8 +137,12 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
   
             # estudante             1       2       3       4       5       6
             permanence_period = [(2, 2), (1, 2), (2, 3), (1, 5), (4, 5), (4, 5)]
-
-            target_time = 5  # saída: 3, pois a quarta, a quinta e a sexta pessoa estudante ainda estavam estudando nesse horário.
+            
+            study_schedule(permanence_period, 5) # saída: 3, pois a quarta, a quinta e a sexta pessoa estudante ainda estavam estudando nesse horário.
+            study_schedule(permanence_period, 4) # saída: 3, pois a quinta e a sexta pessoa estudante começaram a estudar nesse horário e a quarta ainda estava estudando.
+            study_schedule(permanence_period, 3) # saída: 2, pois a terceira e a quarta pessoa estudante ainda estavam estudando nesse horário.
+            study_schedule(permanence_period, 2) # saída: 4, pois a primeira, a segunda, a terceira e a quarta pessoa estudante estavam estudando nesse horário.
+            study_schedule(permanence_period, 1) # saída: 2, pois a segunda e a quarta pessoa estudante estavam estudando nesse horário.
   
       - Retornos
         * Retorna a `quantidade de estudantes` presentes para uma entrada específica;
