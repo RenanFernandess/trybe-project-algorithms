@@ -169,7 +169,6 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
               is_palindrome_recursive("AGUA") # saída: False
             
       - Retornos
-  
         * Retorna `True` se a palavra passada por parâmetro for um palíndromo;
         * Retorna `False` se a palavra passada por parâmetro não for um palíndromo;
         * Retorna `False` se nenhuma palavra for passada por parâmetro.
@@ -242,15 +241,22 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
    </details>
 5. <details>
       <summary>is_palindrome_iterative()</summary>
+      Resolva o mesmo problema apresentado no requisito 2 - Palíndromos, porém dessa vez utilizando a solução iterativa.
   
-        is_palindrome_iterative(word)
+            is_palindrome_iterative(word: str)
   
       - Ex:
           
-          
+              is_palindrome_iterative("ANA") # saída: True
+              is_palindrome_iterative("SOCOS") # saída: True
+              is_palindrome_iterative("COXINHA") # saída: False
+              is_palindrome_iterative("AGUA") # saída: False
             
       - Retornos
-        
+        * Retorna `True` se a palavra passada por parâmetro for um palíndromo;
+        * Retorna `False` se a palavra passada por parâmetro não for um palíndromo;
+        * Retorna `False` se nenhuma palavra for passada por parâmetro.
+  
    </details>
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
