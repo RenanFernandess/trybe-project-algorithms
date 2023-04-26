@@ -130,10 +130,23 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 
 1. <details>
       <summary>study_schedule()</summary>
-          study_schedule(permanence_period, target_time)
   
-        
-    </details>
+        study_schedule(permanence_period: list[(1, 2)], target_time: int)
+      
+      - Ex:
+  
+            # estudante             1       2       3       4       5       6
+            permanence_period = [(2, 2), (1, 2), (2, 3), (1, 5), (4, 5), (4, 5)]
+
+            target_time = 5  # saída: 3, pois a quarta, a quinta e a sexta pessoa estudante ainda estavam estudando nesse horário.
+  
+      - Retornos
+        * Retorna a `quantidade de estudantes` presentes para uma entrada específica;
+        * Retorna `None` se em permanence_period houver alguma entrada inválida;
+        * Retorna `None` se target_time recebe um valor vazio;
+
+</details>
+
 2. <details>
       <summary>is_palindrome_recursive()</summary>
           is_palindrome_recursive(word, low_index)
