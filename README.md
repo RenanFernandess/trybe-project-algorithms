@@ -132,18 +132,30 @@ is_palindrome_recursive(word, low_index)
 
 1. <details>
       <summary>study_schedule()</summary>
-        study_schedule(permanence_period, target_time)
+          study_schedule(permanence_period, target_time)
   
         
     </details>
 2. <details>
       <summary>is_palindrome_recursive()</summary>
-        is_palindrome_recursive(word, low_index)
+          is_palindrome_recursive(word, low_index)
         
     </details>
-3. is_anagram(first_string, second_string)
-4. find_duplicate()
-5. is_palindrome_iterative()
+3. <details>
+      <summary>is_anagram()</summary>
+          is_anagram(first_string, second_string)
+        
+    </details>
+4. <details>
+      <summary>find_duplicate()</summary>
+          find_duplicate(nums)
+        
+   </details>
+5. <details>
+      <summary>is_palindrome_iterative()</summary>
+          is_palindrome_iterative(word)
+        
+   </details>
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
