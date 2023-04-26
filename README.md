@@ -178,15 +178,36 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
     </details>
 3. <details>
       <summary>is_anagram()</summary>
-
+      
+      O algoritmo que consiga comparar duas strings, ordená-las e identificar se uma é um anagrama da outra. Ou seja, sua função irá receber duas strings de parâmetro e o retorno da função será uma tupla() com a primeira string ordenada, a segunda string ordenada e um booleano, `True` ou `False` representando se são anagramas.
+      
         is_anagram(first_string, second_string)
+  
+      O algoritmo considera letras maiúsculas e minúsculas como iguais durante a comparação das entradas, ou seja, ser case insensitive.
+
+      Mas o que é um anagrama?
+
+      > "Um anagrama é uma espécie de jogo de palavras criado com a reorganização das letras de uma palavra ou expressão para produzir outras palavras ou expressões, utilizando todas as letras originais exatamente uma vez."
   
       - Ex:
           
-          
+              is_anagram("amor", "roma") # saída: ('amor', 'amor', True)
+              # Explicação: Nesse caso a palavra 'amor' ordenada continua 'amor' e 'roma' ordenado vira 'amor, além disso a função é True, pois a palavra "roma" é um anagrama de "amor".
+              
+              is_anagram("pedra", "perda") # saída: ('adepr', 'adepr', True)
+              # Explicação: Nesse caso o retorno também é True. Na palavra "pedra", trocamos o "d" de lugar com o "r" e formamos "perda", sendo assim um anagrama e temos as duas strings ordenadas.
+                
+              is_anagram("Amor", "Roma") # saída: ('amor', 'amor', True)
+              # Explicação: Nesse caso o retorno da função é True, pois a palavra "Roma" é um anagrama de "Amor" independente da letra "R" e "A" serem maiúsculas.
+              
+              is_anagram("coxinha", "empada") # saída: ('achinox', 'aademp', False)
+              # exemplo em que não existe um anagrama
+              
             
       - Retornos
-        
+          * Retorna `True` se as palavras passadas por parâmetro forem anagramas;
+          * Retorna `False` se as palavras passadas por parâmetro não forem anagramas;
+          * Retorna `False` se alguma das palavras passadas por parâmetro for uma string vazia;
     </details>
 4. <details>
       <summary>find_duplicate()</summary>
