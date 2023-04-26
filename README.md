@@ -128,6 +128,23 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 
 ## Uso
 
+is_palindrome_recursive(word, low_index)
+
+1. <details>
+      <summary>study_schedule()</summary>
+        study_schedule(permanence_period, target_time)
+  
+        
+    </details>
+2. <details>
+      <summary>is_palindrome_recursive()</summary>
+        is_palindrome_recursive(word, low_index)
+        
+    </details>
+3. is_anagram(first_string, second_string)
+4. find_duplicate()
+5. is_palindrome_iterative()
+
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 ## Contato
