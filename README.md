@@ -128,8 +128,6 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 
 ## Uso
 
-is_palindrome_recursive(word, low_index)
-
 1. <details>
       <summary>study_schedule()</summary>
           study_schedule(permanence_period, target_time)
