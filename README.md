@@ -154,9 +154,8 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 2. <details>
       <summary>is_palindrome_recursive()</summary>
       A função irá determinar se uma palavra é um palíndromo ou não. A função irá receber uma string de parâmetro e o retorno será um booleano, True ou False.
-
   
-        is_palindrome_recursive(word: str, low_index=0)
+          is_palindrome_recursive(word: str, low_index=0)
 
       Mas o que é um palíndromo?
 
@@ -211,14 +210,34 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
     </details>
 4. <details>
       <summary>find_duplicate()</summary>
-  
-        find_duplicate(nums)
+      Dada um array de números inteiros contendo n + 1 inteiros, chamado de nums, em que cada inteiro está no intervalo [1, n].
+        
+          find_duplicate(nums: int)
   
       - Ex:
           
-          
+              nums = [1, 3, 4, 2, 2]
+              find_duplicate(nums) # saída: 2
+
+              nums = [3, 1, 3, 4, 2]
+              find_duplicate(nums) # saída: 3
+
+              nums = [1, 1]
+              find_duplicate(nums) # saída: 1
+
+              nums = [1, 1, 2]
+              find_duplicate(nums) # saída: 1
+
+              nums = [3, 1, 2, 4, 6, 5, 7, 7, 7, 8]
+              find_duplicate(nums) # saída: 7
             
       - Retornos
+          * Retorna o número repetivo se a função receber como parâmetro uma lista com números repetidos;
+          * Retorna `False` se a função não receber nenhum parâmetro;
+          * Retorna `False` se a função receber como parâmetro uma string;
+          * Retorna `False` se a função receber como parâmetro uma lista sem números repetidos;
+          * Retorna `False` se a função receber como parâmetro apenas um valor;
+          * Retorna `False` se a função receber como parâmetro um número negativo;
         
    </details>
 5. <details>
